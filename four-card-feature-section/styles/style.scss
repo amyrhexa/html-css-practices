@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+:root {
+  font-size: 15px;
+}
+
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+body {
+  background-color: $VeryLightGray;
+  color: $VeryDarkBlue;
+  main {
+    padding: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    .titles {
+      text-align: center;
+      width: 500px;
+      h1 {
+        line-height: 2rem;
+        strong {
+          font-weight: 600;
+        }
+      }
+      p {
+        line-height: 1.5rem;
+        margin: 1rem 0 3rem;
+      }
+    }
+    .cards {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+      }
+      gap: 2rem;
+      .card {
+        box-shadow: $GrayishBlue 0px 3px 8px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 0.4rem;
+        max-width: 20rem;
+        h2 {
+          font-weight: 600;
+        }
+        p {
+          color: $GrayishBlue;
+          line-height: 1.5rem;
+        }
+        img {
+          align-self: flex-end;
+          margin: 1.5rem 0;
+        }
+      }
+      &-first {
+        border-top: 5px solid $Cyan;
+        @media screen and (min-width: 800px) {
+          grid-row: 2/4;
+          grid-column: 1/2;
+        }
+      }
+      &-sec {
+        border-top: 5px solid $Red;
+        @media screen and (min-width: 800px) {
+          grid-row: 1/3;
+          grid-column: 2/3;
+        }
+      }
+      &-thi {
+        border-top: 5px solid $Orange;
+        @media screen and (min-width: 800px) {
+          grid-row: 3/5;
+          grid-column: 2/3;
+        }
+      }
+      &-fou {
+        border-top: 5px solid $Blue;
+        @media screen and (min-width: 800px) {
+          grid-row: 2/4;
+          grid-column: 3/4;
+        }
+      }
+    }
+  }
+}

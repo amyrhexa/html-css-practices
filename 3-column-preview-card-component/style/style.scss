@@ -1,0 +1,116 @@
+$orange: #e38826;
+$cyan: #006970;
+$darkcyan: #004241;
+@font-face {
+  font-family: "LexendDeca";
+  src: url(../fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: "BigShouldersDisplay";
+  src: url(../fonts/BigShouldersDisplay-Bold.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  main {
+    margin: 80px 0%;
+    color: #f2f2f2;
+    font-size: 15px;
+    font-family: LexendDeca;
+    @media screen and (min-width: 980px) {
+      display: flex;
+    }
+    section {
+      height: 437px;
+      width: 326px;
+      padding: 3rem;
+      @media screen and (min-width: 980px) {
+        height: 500px;
+        width: 310px;
+      }
+      svg {
+      }
+      h2 {
+        font-family: BigShouldersDisplay;
+        margin: 1.6rem 0;
+        font-size: 2.5rem;
+      }
+      p {
+        color: #ffffffbf;
+        line-height: 1.7rem;
+        margin: 1rem 0;
+      }
+      button {
+        font-family: LexendDeca;
+        background-color: #f2f2f2;
+        border: none;
+        outline: none;
+        padding: 0.8rem 1.9rem;
+        border-radius: 5rem;
+        font-size: 1rem;
+        transition: all 350ms ease;
+        cursor: pointer;
+        @media screen and (min-width: 980px) {
+          margin-top: 4rem;
+        }
+      }
+    }
+    .sedans {
+      background-color: $orange;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      @media screen and (min-width: 980px) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+      }
+      button {
+        color: $orange;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #f2f2f2;
+          color: #f2f2f2;
+        }
+      }
+    }
+    .suvs {
+      background-color: $cyan;
+      button {
+        color: $cyan;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #f2f2f2;
+          color: #f2f2f2;
+        }
+      }
+    }
+    .luxury {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: $darkcyan;
+      @media screen and (min-width: 980px) {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      button {
+        color: $darkcyan;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #f2f2f2;
+          color: #f2f2f2;
+        }
+      }
+    }
+  }
+}

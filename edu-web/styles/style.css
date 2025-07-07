@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: 400;
+  background-color: #f8f8f8;
+  cursor: default;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+body header nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+body header nav #logo {
+  color: #5C48F2;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+body header nav #reg {
+  background-color: #5C48F2;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #5C48F2;
+  color: #f8f8f8;
+  padding: 0.3rem 1rem;
+}
+body header nav #reg:hover {
+  border: 0.1rem solid #5C48F2;
+  background-color: transparent;
+  color: #5C48F2;
+}
+body header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 675px) {
+  body header nav ul {
+    display: none;
+  }
+}
+body header nav ul li a {
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+body header nav ul li a:hover {
+  color: #5C48F2;
+}
+body header section {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 675px) {
+  body header section {
+    flex-direction: column;
+  }
+}
+body header section .left {
+  width: 40%;
+}
+@media screen and (max-width: 675px) {
+  body header section .left {
+    width: 90%;
+  }
+}
+body header section .left_texts {
+  text-align: justify;
+}
+body header section .left_texts h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+body header section .left_texts h1 strong {
+  font-weight: 700;
+}
+body header section .left_texts h1 strong span {
+  color: #5C48F2;
+}
+body header section .left_texts p {
+  color: #333;
+  margin: 2rem 0;
+}
+body header section .left_search {
+  position: relative;
+}
+body header section .left_search input {
+  width: 100%;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  box-shadow: 0 0 4px 0 #333;
+  background-color: #f8f8f8;
+  font-weight: 700;
+  color: #333;
+}
+body header section .left_search input:hover {
+  box-shadow: 0 0 8px 0 #333;
+}
+body header section .left_search input:focus {
+  box-shadow: 0 0 8px 0 #333;
+}
+body header section .left_search label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  background-color: #5C48F2;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 4px 10px;
+  color: #f8f8f8;
+  transition: all 250ms ease;
+}
+body header section .left_search label:hover {
+  background-color: rgba(92, 72, 242, 0.8392156863);
+}
+body header section .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (max-width: 675px) {
+  body header section .right {
+    width: 90%;
+  }
+}
+body header section .right img {
+  border-radius: 1rem;
+  max-width: 16rem;
+}
+body header section .right #img1 {
+  align-self: flex-end;
+}
+body header section .right #img2 {
+  align-self: flex-start;
+}
+body header section .right div {
+  position: absolute;
+  background-color: rgba(92, 72, 242, 0.1411764706);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #333;
+}/*# sourceMappingURL=style.css.map */

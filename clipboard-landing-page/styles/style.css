@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BJJ";
+  src: url(../fonts/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+  font-family: "BJJB";
+  src: url(../fonts/BaiJamjuree-SemiBold.ttf);
+}
+body {
+  font-family: BJJ;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  font-size: 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  background: url(../images/bg-header-mobile.png) no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 675px) {
+  body {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+  }
+}
+body .header {
+  padding: 2rem;
+}
+@media screen and (min-width: 675px) {
+  body .header {
+    width: 630px;
+  }
+}
+body .header-top h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+body .header-bot {
+  margin-top: 10rem;
+}
+body .header-bot_title h2 {
+  margin: 1rem 0;
+}
+body .header-bot_title p {
+  color: hsl(201, 11%, 66%);
+  margin: 1rem 0;
+}
+@media screen and (min-width: 675px) {
+  body .header-bot_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: start;
+  }
+}
+body .header-bot_desc img {
+  width: 100%;
+}
+@media screen and (min-width: 675px) {
+  body .header-bot_desc img {
+    width: 80%;
+    margin-left: -220px;
+  }
+}
+body .header-bot_desc h3 {
+  margin: 1rem 0;
+}
+body .header-bot_desc p {
+  color: hsl(201, 11%, 66%);
+}
+body .main {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+@media screen and (min-width: 675px) {
+  body .main {
+    width: 630px;
+  }
+}
+body .main-body_texts img {
+  width: 100%;
+  margin: 2rem 0;
+}
+body .main-body_texts svg {
+  margin: 2rem 0;
+}
+@media screen and (min-width: 675px) {
+  body .main-body_texts__wrapper {
+    display: flex;
+  }
+}
+body .main-body_logos {
+  margin: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media screen and (min-width: 675px) {
+  body .main-body_logos {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+body .footer {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f5f6;
+}
+body .footer-logo {
+  width: 3rem;
+}
+body .footer-logo img {
+  width: 100%;
+}
+body .footer-links {
+  margin-top: 1rem;
+}
+body .footer-links a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  display: block;
+  margin: 1rem;
+  transition: color 250ms ease;
+}
+body .footer-links a:hover {
+  color: hsl(171, 66%, 44%);
+}
+body .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+body .footer-social a {
+  color: hsl(201, 11%, 66%);
+  text-decoration: none;
+  transition: color 250ms ease;
+}
+body .footer-social a:hover {
+  color: hsl(171, 66%, 44%);
+}
+p {
+  font-size: 1.02rem;
+  line-height: 1.4rem;
+  color: hsl(201, 11%, 66%);
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: BJJB;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 675px) {
+  .btnholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.btnholder button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 9rem;
+  transition: background-color 200ms ease;
+}
+.btnholder button a {
+  text-decoration: none;
+  color: white;
+  font-family: BJJB;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+}
+
+.btnios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 1px 3px 0px 0px hsl(171, 66%, 34%);
+}
+.btnios:hover {
+  background-color: #2acfb7;
+}
+
+.btnmac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 1px 3px 0px 0px hsl(233, 100%, 59%);
+}
+.btnmac:hover {
+  background-color: #7a8aff;
+}/*# sourceMappingURL=style.css.map */

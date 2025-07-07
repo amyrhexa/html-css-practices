@@ -1,0 +1,273 @@
+$Cyan: hsl(171, 66%, 44%);
+$Blue: hsl(233, 100%, 69%);
+$Gray: hsl(210, 10%, 33%);
+$lightgray: hsl(201, 11%, 66%);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BJJ";
+    src: url(../fonts/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: "BJJB";
+    src: url(../fonts/BaiJamjuree-SemiBold.ttf);
+}
+
+body {
+    font-family: BJJ;
+    color: $Gray;
+    text-align: center;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width:675px) {
+        background: url(../images/bg-header-desktop.png) no-repeat;
+        background-size: contain;
+    }
+
+
+    .header {
+        padding: 2rem;
+
+        @media screen and (min-width:675px) {
+            width: 630px;
+        }
+
+        &-top {
+
+
+            h1 {
+                margin: 1rem 0;
+                font-size: 2rem;
+            }
+
+            p {}
+
+        }
+
+        &-bot {
+            margin-top: 10rem;
+
+            &_title {
+                h2 {
+                    margin: 1rem 0;
+                }
+
+                p {
+                    color: $lightgray;
+                    margin: 1rem 0;
+                }
+            }
+
+            &_desc {
+                @media screen and (min-width:675px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    text-align: start;
+                }
+
+                &__wrapper {}
+
+                img {
+                    width: 100%;
+
+                    @media screen and (min-width:675px) {
+                        width: 80%;
+                        margin-left: -220px;
+                    }
+                }
+
+                h3 {
+                    margin: 1rem 0;
+                }
+
+                p {
+                    color: $lightgray;
+                }
+            }
+        }
+    }
+
+    .main {
+        @media screen and (min-width:675px) {
+            width: 630px;
+        }
+
+        margin-top: 5rem;
+        padding: 2rem;
+
+        &-body {
+            &_texts {
+                h2 {}
+
+                p {}
+
+                img {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+
+                svg {
+                    margin: 2rem 0;
+                }
+
+                &__wrapper {
+                    @media screen and (min-width:675px) {
+                        display: flex;
+                    }
+
+                    h3 {}
+                }
+            }
+
+            &_logos {
+                margin: 6rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 5rem;
+
+                @media screen and (min-width:675px) {
+                    flex-direction: row;
+                    gap: 2rem;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        padding: 2rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lighten($lightgray, 30%);
+
+        &-logo {
+            width: 3rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-links {
+            margin-top: 1rem;
+
+            a {
+                text-decoration: none;
+                color: $Gray;
+                display: block;
+                margin: 1rem;
+                transition: color 250ms ease;
+
+                &:hover {
+                    color: $Cyan;
+
+                }
+            }
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+
+            a {
+                color: $lightgray;
+                text-decoration: none;
+                transition: color 250ms ease;
+
+                &:hover {
+                    color: $Cyan;
+                }
+
+                svg {}
+            }
+
+        }
+    }
+}
+
+p {
+    font-size: 1.02rem;
+    line-height: 1.4rem;
+    color: $lightgray;
+    margin: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: BJJB;
+    font-size: 1.6rem;
+}
+
+.btnholder {
+    @media screen and (min-width:675px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: .9rem;
+        margin-top: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 9rem;
+        transition: background-color 200ms ease;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: BJJB;
+            font-size: 1rem;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.btnios {
+    background-color: $Cyan;
+    box-shadow: 1px 3px 0px 0px hsl(171, 66%, 34%);
+
+    &:hover {
+        background-color: lighten($Cyan, 5%);
+    }
+}
+
+.btnmac {
+    background-color: $Blue;
+    box-shadow: 1px 3px 0px 0px hsl(233, 100%, 59%);
+
+    &:hover {
+        background-color: lighten($Blue, 5%);
+    }
+}
