@@ -33,5 +33,4 @@ Here’s a list of the projects currently included:
 
 ## 🌐 GitHub Pages Access
 
-Once GitHub Pages is enabled for this repository, you can view each project in your browser by visiting:
-https://pythyn.github.io/html-css-practices/
+https://amyrhexa.github.io/html-css-practices/
